@@ -5,80 +5,74 @@
 
 ---
 
-## 📌 Problem Statement
-With the rapid expansion of Wi-Fi, Bluetooth, and IoT-enabled devices, unauthorized wireless usage has become a growing concern in environments such as examination halls, offices, and sensitive institutions. Existing jamming solutions block all signals indiscriminately, disrupting authorized communication and essential services.
+## Overview
+This project presents a **microcontroller-based wireless signal control system** designed for civilian and institutional environments. The system allows controlled disruption of wireless communication through a **web-based interface hosted on the ESP device itself**.
 
-There is a need for a selective, intelligent, and affordable system that can control unauthorized wireless activity without affecting legitimate users.
-
----
-
-## 💡 Project Overview
-The **Selective Signal Jammer for Civilian Applications** is a low-cost, intelligent signal control system designed to selectively restrict unauthorized wireless devices while allowing approved networks to function normally.
-
-Unlike traditional jammers, the system focuses on **selective deauthentication** based on device identification, ensuring ethical and responsible operation suitable for civilian use.
+The goal of the project is to demonstrate **responsible and selective signal control**, avoiding indiscriminate disruption while maintaining flexibility for controlled environments.
 
 ---
 
-## ⚙️ Key Features
-- Selective handling of unauthorized wireless devices  
-- Authorized networks remain unaffected  
-- Operates in controlled indoor environments  
-- Low power and portable design  
-- Web-based user interface for monitoring  
-- Budget-friendly prototype (~₹5,000)
+## System Highlights
+- ESP-based embedded system
+- Web interface accessed via ESP local IP
+- Real-time Wi-Fi scan & control
+- Two operational modes
+- Portable and low-cost prototype (~₹5,000)
 
 ---
 
-## 🧠 Working Principle
-- The system scans nearby wireless activity  
-- Devices are identified using network-level characteristics  
-- Unauthorized devices are selectively disconnected  
-- Authorized devices continue normal operation  
+## Modes of Operation
 
-This approach avoids unnecessary disruption and ensures responsible signal control.
+### 1️⃣ Normal Mode (Implemented & Uploaded)
+- Operates on **Wi-Fi and BLE**
+- Performs controlled deauthentication
+- Used for demonstration and testing
+- **Source code available in this repository**
 
----
+### 2️⃣ Selective Mode (Advanced / Partial Implementation)
+- Focuses on **Wi-Fi-based selective control**
+- Targets only unidentified or unauthorized devices
+- Operated via web interface
+- Core logic under active development and optimization
 
-## 🧩 Technology Stack
-- ESP-series microcontroller  
-- Wireless transceiver modules  
-- Embedded firmware logic  
-- Web-based monitoring interface  
-
----
-
-## 🔐 Source Code & Security Notice
-For ethical, security, and intellectual property reasons, the complete firmware and signal-control logic are **not publicly released**.
-
-This repository is intended to demonstrate:
-- System architecture  
-- Working methodology  
-- Innovation approach  
-- Proof of implementation  
+> The selective mode represents the innovative direction of this project and is demonstrated through system architecture, UI flow, and testing results.
 
 ---
 
-## 📽️ Demo & Proof of Work
-Demo images and prototype testing visuals are available via the link provided in the `/demo` folder.
+## Web Interface
+- Hosted directly on ESP device
+- Accessed via local IP address
+- Features:
+  - Scan nearby Wi-Fi networks
+  - Switch between modes
+  - Start/stop signal control
+  - View device activity
 
 ---
 
-## 🌍 Applications
-- Examination centers  
-- Corporate offices  
-- Hospitals  
-- Government facilities  
-- Secure meeting environments  
+## Hardware Components
+- ESP series microcontroller
+- Wireless transceiver modules
+- Antenna system
+- Power management circuit
+- Portable enclosure
 
 ---
 
-## 🚀 Future Scope
-- AI-assisted device classification  
-- Automated decision-based signal control  
-- Expansion to additional frequency bands  
-- Centralized admin dashboard  
+## Source Code Policy
+This repository includes **working firmware for the Normal Mode** to demonstrate practical implementation.
+
+Advanced selective logic is intentionally limited to architecture and UI demonstration due to:
+- Security considerations
+- Ongoing optimization
+- Responsible disclosure practices
 
 ---
 
-## 🏁 Conclusion
-This project represents a responsible, selective, and practical approach to wireless signal control for civilian applications, balancing security, affordability, and ethical considerations.
+## Media & Demonstration
+Project images, UI screenshots, and working videos are provided in the `/media` and `/demo` sections.
+
+---
+
+## Conclusion
+This project demonstrates a practical embedded system capable of controlled wireless signal handling, combining affordability, portability, and a strong foundation for future intelligent enhancements.
