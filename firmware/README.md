@@ -1,9 +1,17 @@
-## Firmware Information
+# Firmware Documentation
 
-This folder contains firmware related to the **Normal Mode** of the system.
+This directory contains firmware related to the **Normal Mode** of the project.
 
-- Supports Wi-Fi and BLE operations
-- Used for live demonstration
-- Controlled via ESP-hosted web interface
+## Available Implementation
+- Normal Mode:
+  - Supports Wi-Fi and BLE operations
+  - Controlled via ESP-hosted web interface
+  - Used for live demonstration and validation
 
-Selective mode logic is not fully published and is represented through system design and UI flow.
+## Note on Selective Mode
+Selective mode implementation is partially completed and demonstrated through:
+- System architecture
+- Web interface flow
+- Testing results
+
+The full selective logic is not published due to responsible disclosure and ongoing optimization.
